@@ -2,20 +2,20 @@
 #include <vector>
 #include <algorithm>
 using namespace std;
-
+typedef long long ll;
 int main()
 {
 
     int t;cin>>t;
     while(t--){
         vector<int> v;
-        int n;cin>>n;
-        int s=0;
-        for(int i=0;i<n-2;i++){
-            int e;cin>>e;s+=e;
+        ll n;cin>>n;
+        ll s=0;
+        for(ll i=0;i<n-2;i++){
+            ll e;cin>>e;s+=e;
         }
-        int n1;cin>>n1;s-=n1;
-        int n2;cin>>n2;s+=n2;
+        ll n1;cin>>n1;s-=n1;
+        ll n2;cin>>n2;s+=n2;
         cout<<s<<endl;
 
     }
